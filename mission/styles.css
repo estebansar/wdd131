@@ -21,10 +21,12 @@ h1{
 h2{
     color:  #006EB6;
     margin-top: 10;
-    margin-bottom: 15px;
+    margin-bottom: 16px;
     font-weight: 500;
+    font-size: 14px;
     letter-spacing: 3px;
     text-transform: uppercase;
+    text-align: center;
 }
 
 main p {
