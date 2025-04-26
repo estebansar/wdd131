@@ -3,7 +3,6 @@ body {
     font-size: 20px;
     margin: 0;
     padding: 0;
-    display: flex;
     text-align: center;
 }
 .content {
