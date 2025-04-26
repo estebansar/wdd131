@@ -15,11 +15,13 @@ body {
 h1{
     text-transform: uppercase;
     margin-bottom: 12px;
+    font-weight: 700;
 }
 
 h2{
     color:  #006EB6;
     margin-top: 0;
+    font-weight: 500;
 }
 
 main p {
