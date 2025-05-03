@@ -4,31 +4,37 @@ body {
     margin: 0;
     padding: 0;
     text-align: center;
+    line-height: 1.5;
 }
 .content {
     max-width: 600px;
-    padding: 40px 25px;
+    padding: 60px;
     margin: 40px auto;
     border: 1.2px solid gray;
 }
 
 h1{
     text-transform: uppercase;
-    margin-bottom: 12px;
-    font-weight: 700;
-    font-size: 38px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-size: 382px;
     text-align: center;
+    letter-spacing: 1px;
 }
 
 h2{
     color:  #006EB6;
-    margin-top: 10;
+    margin-top: 10px;
     margin-bottom: 16px;
     font-weight: 500;
     font-size: 14px;
     letter-spacing: 3px;
     text-transform: uppercase;
     text-align: center;
+    border-bottom: 1px solid gray;
+    display: inline-block;
+    padding-bottom: 6px;
+
 }
 
 main p {
@@ -37,7 +43,8 @@ main p {
 }
 
 main ol {
-    padding-left: 15px;
+    margin-bottom: 20px;
+    text-align: left;
 }
 
 main li {
