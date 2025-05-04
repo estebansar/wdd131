@@ -59,3 +59,12 @@ footer {
 .logo_webp {
     width: 150px;
 }
+
+body.dark {
+    background-color:#1a1a1a;
+    color: white;
+}
+
+body.dark h2 {
+    color: #4F9ACF;
+}
