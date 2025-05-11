@@ -9,23 +9,24 @@ body {
     margin: 1rem auto;
     border: 1px solid #bbb;
     padding: 1rem;
-    background-color: #e6f2ff; /* light blue */
+    background-color: #c9d4f2; /* light bluish background */
   }
   
-  /* Main uses grid layout */
+  /* Main layout: stack sections vertically by default */
   main {
     display: grid;
-    grid-template-columns: 1fr; /* one column */
+    grid-template-columns: 1fr;
     gap: 1rem;
   }
   
-  /* Sections inside the main */
+  /* Each scripture section */
   section {
     padding: 1rem;
-    background-color: #fff; /* white */
+    background-color: #fff;
+    border: 1px solid #bbb;
   }
   
-  /* Adding media query */
+  /* Media Query for screens 500px or wider */
   @media screen and (min-width: 500px) {
     header {
       background-color: black;
@@ -33,6 +34,7 @@ body {
     }
   
     main {
-      grid-template-columns: 1fr 1fr; /* two columns */
+      grid-template-columns: 1fr 1fr; /* two columns layout */
     }
   }
+  
