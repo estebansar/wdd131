@@ -35,6 +35,6 @@ body {
   
     main {
       grid-template-columns: 1fr 1fr; /* two columns layout */
+      background-color: #c9d4f2; /* override green */
     }
   }
-  
