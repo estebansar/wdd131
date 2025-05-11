@@ -24,10 +24,9 @@ body {
     padding: 1rem;
     background-color: #fff; /* white */
   }
-
-
-
-  @media screen and (min-width: 500px) {    /*adding media query*/
+  
+  /* Adding media query */
+  @media screen and (min-width: 500px) {
     header {
       background-color: black;
       color: white;
