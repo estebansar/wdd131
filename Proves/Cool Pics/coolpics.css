@@ -50,6 +50,10 @@ nav li {
     margin-top: 0.8em;
 }
 
+main h2 {
+    text-align: center;
+}
+
 .gallery {
     display: grid;
     grid-template-columns: 1fr;
