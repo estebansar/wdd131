@@ -50,14 +50,19 @@ nav a {
 
 header {
     padding: 1rem;
-    border-bottom: 3px solid #af1b3f;
     text-align: center;
+}
+
+header nav {
+    border-bottom: 3px solid #af1b3f;
+    border-top: 3px solid #af1b3f;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
 }
 
 header h1 {
     font-size: 1.8rem;
     margin-bottom: 0.8rem;
-    border-bottom: 3px solid #af1b3f;
     padding-bottom: 1rem;
 }
 
