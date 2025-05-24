@@ -31,3 +31,83 @@ nav a {
     font-size: 1rem;
 }
 
+.skiptocontent a {
+    text-decoration: none;
+    top: -35px;
+    left: 0;
+    position: absolute;
+    color: white;
+    padding: 10px 15px;
+    background-color: #af1b3f;
+    z-index: 100;
+}
+
+.skiptocontent a:focus {
+    top: 0;
+}
+
+header {
+    padding: 1rem;
+    border-bottom: 3px solid #af1b3f;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+.articles {
+    display: grid;
+    gap: 1.5rem;
+    padding: 2rem;
+    grid-template-columns: 2fr 1fr;
+    max-width: 1000px;
+    margin: auto;
+}
+
+article {
+    display: grid;
+    gap: 1rem;
+    border: 1px solid lightgray ;
+    grid-template-columns: 110px 1fr;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+.details {
+    text-align: right;
+    color: dimgray;
+    font-size: 1rem;
+}
+
+.content h2 {
+    font-size: 1.3rem;
+    line-height: 1.2;
+}
+
+.content img {
+    margin: 0 auto;
+    max-width: 200px;
+    height: auto;
+    display: block;
+    width: 100%;
+    margin-bottom: 0.5rem;
+}
+
+.content p {
+    margin-top: 0.5rem;
+}
+
+.filters {
+    padding: 1.2rem;
+    border: 1px dashed lightgray;
+    background-color: #fefefe;
+}
+
+footer {
+    text-align: center;
+    padding: 1.2rem;
+    margin-top: 1.8rem;
+    background-color: #efc69b;
+}
