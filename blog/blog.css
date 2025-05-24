@@ -55,15 +55,15 @@ header {
 
 header nav {
     border-bottom: 3px solid #af1b3f;
-    border-top: 3px solid #af1b3f;
-    padding-top: 0.5rem;
+       padding-top: 0.8rem;
     padding-bottom: 0.5rem;
 }
 
 header h1 {
     font-size: 1.8rem;
-    margin-bottom: 0.8rem;
-    padding-bottom: 1rem;
+    margin-bottom: 0.3rem;
+    padding-bottom: 0.7rem;
+    border-bottom: 3px solid #af1b3f;
 }
 
 .articles {
