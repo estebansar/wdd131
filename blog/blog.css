@@ -9,6 +9,7 @@ body {
     background-color: white;
     color:#473144;
     line-height: 1.4;
+    font-size: 1.1rem;
 }
 
 h1,h2 {
@@ -33,13 +34,14 @@ nav a {
 
 .skiptocontent a {
     text-decoration: none;
-    top: -35px;
+    top: -40px;
     left: 0;
     position: absolute;
     color: white;
     padding: 10px 15px;
     background-color: #af1b3f;
     z-index: 100;
+    transition: top;
 }
 
 .skiptocontent a:focus {
@@ -54,7 +56,9 @@ header {
 
 header h1 {
     font-size: 1.8rem;
-    margin-bottom: 1rem;
+    margin-bottom: 0.8rem;
+    border-bottom: 3px solid #af1b3f;
+    padding-bottom: 1rem;
 }
 
 .articles {
@@ -63,7 +67,7 @@ header h1 {
     padding: 2rem;
     grid-template-columns: 2fr 1fr;
     max-width: 1000px;
-    margin: auto;
+    margin: 0 auto;
 }
 
 article {
@@ -81,13 +85,18 @@ article {
     font-size: 1rem;
 }
 
+.content {
+    text-align: left;
+}
+
 .content h2 {
-    font-size: 1.3rem;
+    font-size: 1.4rem;
     line-height: 1.2;
+    margin-bottom: 1rem;
 }
 
 .content img {
-    margin: 0 auto;
+    margin: 0 0 0.5rem 0;
     max-width: 200px;
     height: auto;
     display: block;
@@ -103,6 +112,7 @@ article {
     padding: 1.2rem;
     border: 1px dashed lightgray;
     background-color: #fefefe;
+    grid-column: 2;
 }
 
 footer {
