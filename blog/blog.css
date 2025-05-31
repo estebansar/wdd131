@@ -72,10 +72,10 @@ main {
 }
 
 .articles {
-    display: grid;
-    gap: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
     padding: 2rem;
-    grid-template-columns: 2fr 1fr;
 }
 
 article {
