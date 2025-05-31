@@ -44,6 +44,7 @@ function articleTemplate(article) {
 		<article>
 			<div class="details">
 				<p class="date">${article.date}</p>
+				<p class="rating">${article.stars}</p>
 				<p>Age: ${article.ages}</p>
 				<p>Genre: ${article.genre}</p>
 			</div>
