@@ -41,7 +41,7 @@ nav a {
     padding: 10px 15px;
     background-color: #af1b3f;
     z-index: 100;
-    transition: top;
+    transition: top 0.3s easy-in-out;
 }
 
 .skiptocontent a:focus {
@@ -55,7 +55,7 @@ header {
 
 header nav {
     border-bottom: 3px solid #af1b3f;
-       padding-top: 0.8rem;
+    padding-top: 0.8rem;
     padding-bottom: 0.5rem;
 }
 
@@ -66,13 +66,16 @@ header h1 {
     border-bottom: 3px solid #af1b3f;
 }
 
+main {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
 .articles {
     display: grid;
     gap: 1.5rem;
     padding: 2rem;
     grid-template-columns: 2fr 1fr;
-    max-width: 1000px;
-    margin: 0 auto;
 }
 
 article {
@@ -81,32 +84,36 @@ article {
     border: 1px solid lightgray ;
     grid-template-columns: 110px 1fr;
     padding: 1rem;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
 }
 
 .details {
     text-align: right;
     color: dimgray;
-    font-size: 1rem;
+    font-size: 1.2rem;
+    line-height: 1.2;
+    border-right: 2px solid lightgray;
+    padding-right: 1rem;
 }
 
 .content {
     text-align: left;
+    padding-left: 1rem;
 }
 
 .content h2 {
     font-size: 1.4rem;
     line-height: 1.2;
     margin-bottom: 1rem;
+    margin-top: 0;
 }
 
 .content img {
-    margin: 0 0 0.5rem 0;
+    margin: 0.5rem auto;
     max-width: 200px;
     height: auto;
     display: block;
     width: 100%;
-    margin-bottom: 0.5rem;
 }
 
 .content p {
