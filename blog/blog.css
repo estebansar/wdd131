@@ -14,7 +14,7 @@ body {
 
 h1,h2 {
     font-family: 'Lora', serif;
-    color: #af1b3f;
+    color: #b63c4d;
 }
 
 nav ul.main-nav {
@@ -27,7 +27,7 @@ nav ul.main-nav {
 }
 
 nav a {
-    color: #af1b3f;
+    color: #b63c4d;
     text-decoration: underline;
     font-size: 1rem;
 }
@@ -54,7 +54,7 @@ header {
 }
 
 header nav {
-    border-bottom: 3px solid #af1b3f;
+    border-bottom: 3px solid #b63c4d;
     padding-top: 0.8rem;
     padding-bottom: 0.5rem;
 }
@@ -63,7 +63,7 @@ header h1 {
     font-size: 1.8rem;
     margin-bottom: 0.3rem;
     padding-bottom: 0.7rem;
-    border-bottom: 3px solid #af1b3f;
+    border-bottom: 3px solid #b63c4d;
 }
 
 main {
@@ -80,7 +80,7 @@ main {
 article {
     display: grid;
     gap: 1rem;
-    border: 1px solid lightgray ;
+    border: none;
     grid-template-columns: 110px 1fr;
     padding: 1rem;
     margin-bottom: 2rem;
@@ -91,7 +91,7 @@ article {
     color: dimgray;
     font-size: 1.2rem;
     line-height: 1.2;
-    border-right: 2px solid lightgray;
+    border-right: 2px solid #f0c87a;
     padding-right: 1rem;
 }
 
@@ -121,10 +121,11 @@ article {
 
 .filters {
     padding: 1.2rem;
-    border: 1px dashed lightgray;
+    border: 1px solid #f0c87a;
     background-color: #fefefe;
     margin: 0;
     align-self: start;
+    height: 100%;
 }
 
 footer {
@@ -139,5 +140,5 @@ footer {
     grid-template-columns: 2fr 1fr;
     gap: 2rem;
     padding: 2rem;
-    align-items: start;
+    align-items: stretch;
 }
