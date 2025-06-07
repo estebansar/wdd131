@@ -78,3 +78,30 @@ button {
     border: none;
     text-transform: uppercase;
 }
+
+.inline-fields {
+    gap: 10px;
+    grid-template-columns: 1fr 1fr;
+    display: grid;
+}
+
+.input-group {
+    margin-bottom: 4px;
+    display: block;
+}
+
+.exp-date {
+    display: grid;
+    gap: 5px;
+    grid-template-columns: 1fr 1fr;
+}
+
+button {
+    cursor: pinter;
+    background-color: white;
+    color: black;
+    padding: 10px 15px;
+    border-radius: 6px;
+    text-transform: uppercase;
+    border: 1px solid black;
+}
