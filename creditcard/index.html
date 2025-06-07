@@ -14,16 +14,24 @@
         <form id="credit_card_from">
 
             <section class="card card-front">
-                <label for="fullName">CARD HOLDER</label>
-                <input type="text" id="fullName" name="fullName" placeholder="John Doe" required>
+                <div class="total-price">TOTAL: $199.99</div>
 
                 <label for="cardNumber">CARD NUMBER</label>
                 <input type="text" id="cardNumber" placeholder="1234 5678 9012 5555" pattern="[0-9]{16}" required>
 
-                <label for="expDate">EXPIRATION</label>
-                <input type="month" id="expDate" name="expDate" required>
-
-                <div class="total-price">TOTAL: $99.99</div>
+                <div>
+                    <div class="inline-fields">
+                        <label for="fullName">CARD HOLDER</label>
+                        <input type="text" id="fullName" name="fullName" placeholder="John Doe" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="expMM">EXPIRATION</label>
+                        <div class="exp-date">
+                            <input type="text" id="expMM" name="expMM" placeholder="MM" maxlength="2" required>
+                            <input type="text" id="expYY" name="expYY" placeholder="YY" maxlength="2" required>
+                        </div>
+                    </div>
+                </div>
             </section>
 
 
