@@ -1,0 +1,80 @@
+* {
+box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 20px;
+    background-color: #f7f7f7;
+}
+
+.card-layout {
+    display: grid;
+    place-items: center;
+    gap: 1rem  ;
+}
+
+form {
+    display: grid;
+    gap: 1rem;
+}
+
+
+.card {
+    width: 300px;
+    height: 180px;  
+    background-color: antiquewhite;
+    padding: 20px;
+    border-radius: 12px;
+    display: grid;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.card-front {
+    z-index: 2;
+}
+
+.card-back {
+    background-color: #ccc;
+    margin-top: -140px;
+    z-index: 1;
+}
+
+.magstripe {
+    background-color: #333;
+    height: 40px;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+label {
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+input {
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    padding: 10px;
+    text-transform: uppercase;
+}
+
+.total-price {
+    text-align: right;
+    font-weight: bold;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    margin-top: 10px;
+}
+
+
+button {
+    padding: 10px 14px;
+    font-size: 1rem;
+    cursor: pointer;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    text-transform: uppercase;
+}
