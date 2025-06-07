@@ -66,18 +66,9 @@ input {
     font-size: 1.1rem;
     text-transform: uppercase;
     margin-top: 10px;
+    text-align: left;
 }
 
-
-button {
-    padding: 10px 14px;
-    font-size: 1rem;
-    cursor: pointer;
-    background-color: #4caf50;
-    color: white;
-    border: none;
-    text-transform: uppercase;
-}
 
 .inline-fields {
     gap: 10px;
@@ -86,8 +77,8 @@ button {
 }
 
 .input-group {
-    margin-bottom: 4px;
-    display: block;
+    gap: 4px;
+    display: grid;
 }
 
 .exp-date {
@@ -97,7 +88,7 @@ button {
 }
 
 button {
-    cursor: pinter;
+    cursor: pointer;
     background-color: white;
     color: black;
     padding: 10px 15px;
