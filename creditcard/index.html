@@ -7,44 +7,50 @@
     <meta name="description" content="Credit card submission form">
     <meta name="author" content="Esteban Sarmiento">
     <link rel="stylesheet" href="creditcard.css">
-    <link rel="icon" href="favicon.png">
+    <link rel="icon" type="image/png" href="favicon.png">
 </head>
 <body>
     <main class="card-layout">
         <form id="credit_card_form">
 
-            <section class="card card-front">
-                <div class="total-price">TOTAL: $199.99</div>
+            <div class="card-stack">
 
-                <label for="cardNumber">CARD NUMBER</label>
-                <input type="text" id="cardNumber" placeholder="1234 5678 9012 5555" pattern="[0-9]{16}" required>
+                <section class="card card-front">
+                    <div class="total-price">TOTAL: $199.99</div>
 
-                <div>
+                    <label for="cardNumber">CARD NUMBER</label>
+                    <input type="text" id="cardNumber" placeholder="1234 5678 9012 5555" pattern="[0-9]{16}" required>
+
                     <div class="inline-fields">
                         <div class="input-group">
                             <label for="fullName">CARD HOLDER</label>
                             <input type="text" id="fullName" name="fullName" placeholder="John Doe" required>
                         </div>
-                        
-                    <div class="input-group">
-                        <label for="expMM">EXPIRATION</label>
-                        <div class="exp-date">
+                            
+                        <div class="input-group">
+                            <label for="expMM">EXPIRATION</label>
+                            <div class="exp-date">
                             <input type="text" id="expMM" name="expMM" placeholder="MM" maxlength="2" required>
                             <input type="text" id="expYY" name="expYY" placeholder="YY" maxlength="2" required>
+                            </div>
                         </div>
                     </div>
-                </div>
-            </section>
+                </section>
 
 
-            <section class="card card-back">
-                <div class="magstripe"></div>
+                <section class="card card-back">
+                    <div class="magstripe"></div>
 
-                <label for="cvv">CVC/CVV</label>
-                <input type="text" id="cvv" name="cvv" placeholder="123" pattern="[0-9]{3}" required>
-            </section>
+                    <div class="card-back-content">
+                        <label for="cvv">CVC/CVV</label>
+                        <input type="text" id="cvv" name="cvv" placeholder="XXX" pattern="[0-9]{3}" required>
+                    </div>
+                </section>
+
+            </div>
 
             <button type="submit">Submit</button>
+
 
         </form>
     </main>
