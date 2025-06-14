@@ -1,0 +1,95 @@
+@import url("https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap");
+ :root {
+ --primary-color: #1B98E0;
+ --secondary-color: #59c3c3;
+ --text-dark: #333;
+ --text-light: #ebebeb;
+ --primary-font: Arial, Helvetica,sans-serif;
+ --secondary-font: "Amatic SC";
+}
+
+body {
+    margin: 0;
+    font-family: var(--primary-font);
+    background-color: white;
+    color: var(--text-dark);
+    line-height: 1.6;
+
+}
+
+header, footer {
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+header img {
+    max-width: 50px;
+    vertical-align: middle;
+}
+
+h1 {
+    font-family: 'Amatic SC', cursive;
+    font-size: 2.5rem;
+    letter-spacing: 2px;
+    display: inline;
+    margin-left: 0.5rem;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    margin: 1rem;
+}
+
+input[type="text"] {
+    padding: 0.5rem;
+    font-size: 1rem;
+}
+
+button {
+    padding: 0.5rem 1rem;
+    background-color: var(--secondary-color);
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+.recipe-card {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    margin: 1rem auto;
+    max-width: 90%;
+    padding: 1rem;
+    text-align: center;
+    background-color: #f9f9f9;
+}
+
+.recipe-card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.rating {
+    font-size: 1.2rem;
+    margin: 0.5rem 0;
+}
+
+.description {
+    display: block;
+}
+
+@media (min-width: 960px) {
+    .recipe-card {
+        max-width: 400px;
+    }
+}
+
+.tag {
+    display: inline-block;
+    background-color: white;
+    
+}
