@@ -10,7 +10,7 @@
 
     <link rel="stylesheet" href="recipes.css">
 
-    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap" rel="stylesheet">
 
     <meta property="og:title" content="Page Title">
     <meta property="og:type" content="website" />
@@ -29,31 +29,37 @@
 
     <header>
         <img src="images/images/recipe-book.png" alt="Recipe Book Logo">
-        <h1>Recipe Book</h1>
+        <h1>RecipeBook</h1>
     </header>
 
     <main>
-        <form>
-            <input type="text" placeholder="Search recipes">
-            <button type="submit">Search</button>
+        <form class="search-form">
+            <input type="text" placeholder="find a recipe">
+            <button type="submit">
+                <img src="images/images/search.svg" alt="search" class="search-icon">
+            </button>
         </form>
 
 
     </main>
 
     <footer>
-        <p style="font-size: 0.6em;">
-            <a href="https://www.flaticon.com/free-icons/recipe" title="recipe icons">
-                Recipe icons created by Freepik - flaticon
-            </a>
-        </p>
+        <div class="footer-content">
 
-        <div class="social">
-	        <!-- Social media icons provided under CC from https://www.iconfinder.com/AlfredoCreates  -->
-	        <a href="#"><img src="images/images/instagram_icon.svg" alt="instagram icon"></a>
-	        <a href="#"><img src="images/images/youtube_icon.svg" alt="youtube icon"></a>
-	        <a href="#"><img src="images/images/pinterest_icon.svg" alt="pinterest icon"></a>
+            <div class="social">
+	            <!-- Social media icons provided under CC from https://www.iconfinder.com/AlfredoCreates  -->
+	            <a href="#"><img src="images/images/instagram_icon.svg" alt="instagram icon"></a>
+	            <a href="#"><img src="images/images/youtube_icon.svg" alt="youtube icon"></a>
+	            <a href="#"><img src="images/images/pinterest_icon.svg" alt="pinterest icon"></a>
+            </div>
+
+             <p class="credit">
+                <a href="https://www.flaticon.com/free-icons/recipe" title="recipe icons">
+                    Recipe icons created by Freepik - flaticon
+                </a>
+            </p>
         </div>
+        
     </footer>
     
 </body>

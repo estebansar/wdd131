@@ -9,15 +9,18 @@ recipes.forEach(recipe => {
     section.innerHTML = `
         <img src="${recipe.image}" alt="${recipe.name}">
 
-        <div class="tags">
-            ${recipe.tags.map(tag => `<span class="tag">${tag}</span>`).join('')}
+        <div class="recipe-content"> 
+
+         <div class="tags">
+             ${recipe.tags.map(tag => `<span class="tag">${tag}</span>`).join('')}
+         </div>
+
+         <h2>${recipe.name}</h2>
+         <div class="rating" role="img" aria-label="Rating: ${recipe.rating} out of 5 stars">
+             ${generateStars(recipe.rating)}
+         </div>
+         <p class="description">${recipe.description}</p>
         </div>
-        
-        <h2>${recipe.name}</h2>
-        <div class="rating" role="img" aria-label="Rating: ${recipe.rating} out of 5 stars">
-            ${generateStars(recipe.rating)}
-        </div>
-        <p class="description">${recipe.description}</p>
     
     `;
 
