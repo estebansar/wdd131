@@ -29,8 +29,8 @@ function participantTemplate(count) {
 form.addEventListener("submit", (event) => {
     event.preventDefault();
 
-    const name= document.querySelector("#adultName").value;
-    const total = totalfees();
+    const name = document.querySelector("#adultName").value;
+    const total = totalFees();
     const message = successTemplate({name, count, total});
 
     form.classList.add("hide");
@@ -44,5 +44,5 @@ function totalfees() {
 }
 
 function successTemplate(info) {
-    return `<p>Thnak  you ${info.name} for registering. You have registered $(info.count} participant and owe $${info.total} in Fees.</p>`;
+    return `<p>Thnak  you ${info.name} for registering. You have registered $(info.count} participants and owe $${info.total} in fees.</p>`;
 }
