@@ -1,0 +1,34 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: sams-serif;
+    padding: 2rem;
+}
+
+main {
+    max-width: 600px;
+    margin: auto;
+}
+
+#participants {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+
+.participant {
+    border: 1px solid #ccc;
+    padding: 1rem;
+}
+
+#add {
+    grid-column: span 2;
+}
+
+.hide {
+    display: none;
+}
