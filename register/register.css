@@ -81,3 +81,8 @@ label {
     margin-bottom: 0.3rem;
     display: block;
 }
+
+fieldset .participant {
+    border: none;
+    padding: 0;
+}
