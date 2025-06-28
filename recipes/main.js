@@ -45,21 +45,7 @@ function displayRecipes(recipesToShow) {
     recipesToShow.forEach(recipe => {
      const section = document.createElement('section');
      section.classList.add('recipe-card');
-
-     section.innerHTML = `
-         <img src="${recipe.image}" alt="${recipe.name}">
-         <div class="recipe-content"> 
-          <div class="tags">
-              ${recipe.tags.map(tag => `<span class="tag">${tag}</span>`).join('')}
-             </div>
-
-             <h2>${recipe.name}</h2>
-             <div class="rating" role="img" aria-label="Rating: ${recipe.rating} out of 5 stars">
-                 ${generateStars(recipe.rating)}
-            </div>
-             <p class="description">${recipe.description}</p>
-            </div>`;
-
+     section.innerHTML = recipeTemplate(recipe);
      main.appendChild(section);
     });
 }
@@ -79,6 +65,23 @@ function generateStars(rating) {
 
     return stars;
 }
+
+function recipeTemplate(recipe) {
+    return `
+        <img src="${recipe.image}" alt="${recipe.name}">
+        <div class="recipe-content">
+            <div class="tags">
+                ${recipe.tags.map(tag => `<span class="tag">${tag}</span>`).join("")}
+            </div>
+            <h2>${recipe.name}</h2>
+            <div class="rating" role="img" aria-label="Rating: ${recipe.rating} out of 5 stars">
+                ${generateStars(recipe.rating)}
+            </div>
+            <p class="description">${recipe.description}</p>
+        </div>`;
+}
+
+
 
 const searchForm = document.querySelector('.search-form');
 if (searchForm) {

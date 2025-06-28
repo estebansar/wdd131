@@ -273,16 +273,15 @@ footer .social {
     margin: 0 2px;
 }
 
-}
 
 /*Part - 2 */
 
 .filter-buttons {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
     gap: 0.5rem;
-    margin: 1rem auto;
+    flex: 1 1 auto;
+    margin: 0;
 }
 
 .filter-buttons button {
@@ -301,8 +300,8 @@ footer .social {
 }
 
 .sort-menu {
-    text-align: center;
-    margin: 0.5rem auto 1rem;
+margin-left: auto;
+flex-shrink: 0;
 }
 
 .sort-menu select {
@@ -311,4 +310,15 @@ footer .social {
     border-radius: 6px;
     border: 1px solid #ccc;
 }
+
+.controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin: 1rem auto;
+    max-width: 960px;
+}
+
 
