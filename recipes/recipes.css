@@ -1,11 +1,11 @@
-@import url("https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kalam:wght@700&display=swap");
  :root {
  --primary-color: white;
  --secondary-color: #59c3c3;
  --text-dark: #1898E0;
  --text-light: #ebebeb;
  --primary-font: Arial, Helvetica,sans-serif;
- --secondary-font: 'Amatic SC', cursive;
+ --secondary-font: 'Kalam', cursive;
 }
 
 body {
@@ -54,7 +54,7 @@ h1 {
     display: inline;
     margin-left: 0.2rem;
     text-transform: none;
-    font-weight: 510;
+    font-weight: 200;
 }
 
 
