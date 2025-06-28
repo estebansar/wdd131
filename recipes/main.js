@@ -3,11 +3,16 @@ import recipes from "./recipes.mjs";
 const main= document.querySelector('main');
 
 
-const randomIndex = Math.floor(Math.random() * recipes.length);
-const randomRecipe = recipes[randomIndex];
-displayRecipes([randomRecipe]);
-let currentRecipes = [randomRecipe];
+let currentRecipes = [];
 
+function init() {
+    const randomIndex = Math.floor(Math.random() * recipes.length);
+    const randomRecipe = recipes[randomIndex];
+    displayRecipes([randomRecipe]);
+    currentRecipes = [randomRecipe];
+}
+
+init();
 
 const filterContainer = document.querySelector(".filter-buttons");
 if (filterContainer) {
