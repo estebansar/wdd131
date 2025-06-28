@@ -3,16 +3,18 @@ import recipes from "./recipes.mjs";
 const main= document.querySelector('main');
 
 
-let currentRecipes = [...recipes];
+const randomIndex = Math.floor(Math.random() * recipes.length);
+const randomRecipe = recipes[randomIndex];
+displayRecipes([randomRecipe]);
+let currentRecipes = [randomRecipe];
 
-displayRecipes(currentRecipes);
 
 const filterContainer = document.querySelector(".filter-buttons");
 if (filterContainer) {
     filterContainer.addEventListener("click", e => {
         if (e.target.tagName === "BUTTON") {
             const selectedTag = e.target.dataset.tag;
-            if (selectedTag === "ALL") {
+            if (selectedTag === "All") {
                 currentRecipes = [...recipes];
             } else {
                 currentRecipes = recipes.filter(recipe => recipe.tags.includes(selectedTag));
@@ -76,5 +78,24 @@ function generateStars(rating) {
     for (let i = 0; i <empty; i++) stars += `<span aria-hidden="true" class="icon-star-empty">☆</span>`;
 
     return stars;
+}
+
+const searchForm = document.querySelector('.search-form');
+if (searchForm) {
+    searchForm.addEventListener('submit', function (e){
+        e.preventDefault();
+        const query = searchForm.querySelector('input').value.toLowerCase().trim();
+
+        const filtered = recipes.filter(recipe =>
+            recipe.name.toLocaleLowerCase().includes(query) ||
+            recipe.description.toLocaleLowerCase().includes(query) ||
+            recipe.tags.find(tag => tag.toLocaleLowerCase().includes(query)) ||
+            recipe.recipeIngredient.find(ingredient => ingredient.toLocaleLowerCase().includes(query))
+        );
+
+        filtered.sort((a,b) => a.name.localeCompare(b.name));
+
+        displayRecipes(filtered);
+    });
 }
 
