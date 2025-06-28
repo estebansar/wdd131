@@ -104,6 +104,7 @@ if (searchForm) {
         filtered.sort((a,b) => a.name.localeCompare(b.name));
 
         displayRecipes(filtered);
+        currentRecipes = filtered;
     });
 }
 
