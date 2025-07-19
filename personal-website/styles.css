@@ -1,1 +1,70 @@
+:root {
+    --primary:#4A5A48;
+    --secondary: #F6F2E8;
+    --accent1: #C5A777;
+    --accent2: #8A9776;
+    --text: #333333;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: var(--secondary);
+    color: var(--text);
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3 {
+    font-family: 'Montserrat', sans-serif;
+    color: var(--primary);
+}
+
+header, footer {
+    background-color: var(--primary);
+    color: var(--secondary);
+    padding: 1rem;
+    text-align: center;
+}
+
+.navi-menu {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    padding: 0;
+    margin: 1rem 0 0;
+}
+
+.nay-menu li a {
+    color: var(--secondary);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.navi-menu li a.active {
+    border-bottom: 2px solid var(--accent1);
+}
+
+main {
+    padding: 2rem;
+}
+
+/*-----filter bottons----*/
+
+.filter-button button {
+    background-color: var(--accent2);
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    margin: 0.5rem;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.filter-button button:hover {
+    background-color: var(--primary);
+}
+
+
+
 
