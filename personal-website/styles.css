@@ -84,6 +84,13 @@ main {
     margin-top: 0.5rem;
 }
 
+.logo {
+    max-width: 30px;
+    width: auto;
+    display: block;
+    margin: 0 auto;
+}
+
 .modal {
     display: none;
     position: fixed;
