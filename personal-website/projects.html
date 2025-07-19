@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="S&A Drafting and Design - Project gallery of architectural and structural drafting work">
+    <title>S&A Drafting and Design | Projects</title>
+    <link rel="stylesheet" href="styles.css">
+    <script type="module" src="main.js" defer></script>
+</head>
+<body>
+    <header>
+        <img src="images/S & A-logos_transparent.png" alt="S&A Drafting and Design" class="logo">
+        <nav>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="projects.html" class="active">Projects</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Project protfolio</h1>
+
+        <div class="filter-buttons">
+            <button data-tag="All">All</button>
+            <button data-tag="Structural">Structural</button>
+            <button data-tag="Hotel Plan">Hotel Plan</button>
+        </div>
+
+        <section class="project-grid">
+            <div class="project-card" data-tag="Structural">
+                <img src="" alt="Structural Project">
+                <h2>Water Retainer Model</h2>
+                <p class="tag">Structural</p>
+                <button class="view-details" data-id="1">View Details</button>
+            </div>
+
+            <div class="project-card" data-tag="Hotel Plan">
+                <img src="" alt="hotel layout">
+                <h2>Marriot Hotel layout</h2>
+                <p class="tag">Hotel Plan</p>
+                <button class="view-details" data-id="2">View Details</button>
+            </div>
+
+            <div class="project-card" data-tags="Structural">
+                <img src="" alt="Grating system">
+                <h2>Stairs & GRating System</h2>
+                <p class="tag">Structural</p>
+                <button class="view-details" data-id="3">View Details</button>
+            </div>
+        </section>
+
+        <div class="modal" id="prject-modal">
+            <div class="modal-content">
+                <span class="close-button">&times;</span>
+                <h2 id="modal-title"></h2>
+                <img id="modal-image" src="" alt="">
+                <p id="modal-description"></p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 S&A Drafting and Design</p>
+    </footer> 
+</body>
+</html>
