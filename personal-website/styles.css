@@ -35,13 +35,13 @@ header, footer {
     margin: 1rem 0 0;
 }
 
-.nay-menu li a {
+.nav-menu li a {
     color: var(--secondary);
     text-decoration: none;
     font-weight: bold;
 }
 
-.navi-menu li a.active {
+.nav-menu li a.active {
     border-bottom: 2px solid var(--accent1);
 }
 
@@ -51,7 +51,7 @@ main {
 
 /*-----filter bottons----*/
 
-.filter-button button {
+.filter-buttons button {
     background-color: var(--accent2);
     color: #fff;
     border: none;
@@ -61,7 +61,7 @@ main {
     cursor: pointer;
 }
 
-.filter-button button:hover {
+.filter-buttons button:hover {
     background-color: var(--primary);
 }
 
@@ -73,9 +73,17 @@ main {
 }
 
 .project-card {
-    max-width: 100%;
-    height: auto;
-    border-radius: 8px;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  text-align: center;
+}
+
+.project-card img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
 }
 
 .tag {
@@ -85,7 +93,7 @@ main {
 }
 
 .logo {
-    max-width: 30px;
+    max-width: 250px;
     width: auto;
     display: block;
     margin: 0 auto;
