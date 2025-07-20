@@ -55,6 +55,14 @@ main {
     padding: 2rem;
 }
 
+.featured-image {
+  display: block;
+  margin: 2rem auto;
+  max-width: 800px;   
+  width: 100%;
+  height: auto;
+}
+
 /*-----filter bottons----*/
 
 .filter-buttons button {

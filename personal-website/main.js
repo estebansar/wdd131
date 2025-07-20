@@ -19,18 +19,18 @@ if (document.querySelector(".project-grid")) {
   const projectDetails = {
     1: {
       title: "Water Retainer Model",
-      image: "images/project1.jpg",
-      description: "This project included slab edge detailing, reinforcement planning, and Revit modeling for a municipal water structure."
+      image: "images/water-retainer-model.jpg",
+      description: "This structural drafting project involved modeling a reinforced water containment structure. Slab edges were detailed, rebar layouts were added, and foundation views were coordinated in Revit to ensure clean construction documentation"
     },
     2: {
-      title: "Marriott Hotel Layout",
-      image: "images/project2.jpg",
-      description: "Drafted a full hotel layout in Revit, including floor plans, interior elevations, and ADA compliant paths."
+      title: "Hampton Inn Hotel Layout",
+      image: "images/hampton-inn.png",
+      description: "Drafted in Revit, this hotel project includes complete floor plans, room annotations, and ADA-compliant layout coordination. Wall elevations and construction documents were created based on architectural markups from the design team"
     },
     3: {
       title: "Stair & Grating System",
-      image: "images/project3.jpg",
-      description: "Modeled industrial stair supports, grating landings, and structural framing with Revit Families."
+      image: "images/stairs-system.png",
+      description: "This drafting task included stair supports, steel grating walkways, and handrails for an industrial structure. Revit Families were used to build flexible components based on structural sketches and field notes"
     }
   };
 
