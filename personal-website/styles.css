@@ -14,6 +14,12 @@ body {
     padding: 0;
 }
 
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 h1, h2, h3 {
     font-family: 'Montserrat', sans-serif;
     color: var(--primary);
@@ -32,7 +38,7 @@ header, footer {
     justify-content: center;
     gap: 2rem;
     padding: 0;
-    margin: 1rem 0 0;
+    margin: 0;
 }
 
 .nav-menu li a {
@@ -96,7 +102,7 @@ main {
     max-width: 250px;
     width: auto;
     display: block;
-    margin: 0 auto;
+    margin: 0;
 }
 
 .modal {
@@ -140,7 +146,30 @@ footer {
 }
 
 
+@media screen and (min-width: 700px) {
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+  }
 
+  .nav-menu {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    padding: 0;
+    margin: 0;
+  }
 
+  .nav-menu li {
+    list-style: none;
+  }
 
+  .nav-menu a {
+    color: var(--secondary);
+    text-decoration: none;
+    font-weight: bold;
+  }
+}
 
