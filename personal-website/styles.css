@@ -63,6 +63,19 @@ main {
   height: auto;
 }
 
+.random-facts {
+  background-color: var(--accent1);
+  color: white;
+  padding: 1rem;
+  border-radius: 10px;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.random-facts h2 {
+  margin-bottom: 1rem;
+}
+
 /*-----filter bottons----*/
 
 .filter-buttons button {
