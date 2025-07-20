@@ -45,6 +45,8 @@ header, footer {
     color: var(--secondary);
     text-decoration: none;
     font-weight: bold;
+    padding: 0.75rem 1rem;
+    display: inline-block;
 }
 
 .nav-menu li a.active {
@@ -65,7 +67,7 @@ main {
 
 .random-facts {
   background-color: var(--accent1);
-  color: white;
+  color: #1a1a1a;
   padding: 1rem;
   border-radius: 10px;
   text-align: center;
